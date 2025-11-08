@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QA Solution - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">QA</div>
+      <div class="site-title">QA Solution</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="profile.html" class="nav-link">Our Profile</a>
+      <a href="#" class="nav-link">Portfolio</a>
+      <a href="#message-us" class="nav-link">Message Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Welcome / Banner area -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hi <span id="greetingName">Guest</span>, Welcome To Website</h1>
+        <p class="hero-sub">Ini adalah website latihan pertama</p>
+      </div>
+      <div class="hero-image">
+        <img src="image/pasfoto.png" alt="Banner" />
+      </div>
+    </section>
+
+    <!-- Headquarters section -->
+    <section class="hq">
+      <h2>Our Headquarter</h2>
+      <div class="hq-list">
+        <div class="hq-item">
+          <div class="circle"></div>
+          <div class="hq-label">Jakarta</div>
+        </div>
+        <div class="hq-item">
+          <div class="circle"></div>
+          <div class="hq-label">Bandung</div>
+        </div>
+        <div class="hq-item">
+          <div class="circle"></div>
+          <div class="hq-label">Surabaya</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us (form + display) -->
+    <section id="message-us" class="message-section">
+      <h2>Message Us</h2>
+      <div class="message-wrap">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Name
+            <input id="name" name="name" type="text" placeholder="Nama" />
+          </label>
+
+          <label>
+            Email
+            <input id="email" name="email" type="email" placeholder="email@example.com" />
+          </label>
+
+          <label>
+            Phone Number
+            <input id="phone" name="phone" type="tel" placeholder="0812xxxx" />
+          </label>
+
+          <label>
+            Message
+            <textarea id="message" name="message" rows="5" placeholder="Pesan"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+          <div id="formErrors" class="form-errors" aria-live="polite"></div>
+        </form>
+
+        <div class="submission-box">
+          <div id="currentTime" class="current-time"></div>
+          <div id="submittedData" class="submitted-data">
+            <!-- populated by JS -->
+            <em>No submission yet</em>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Created by Muhamad Insan Taufik</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
